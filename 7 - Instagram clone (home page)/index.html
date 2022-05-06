@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Web Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+<!-- navbar stars here -->
+    <nav class="navbar">
+        <div class="nav-wrapper">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2560px-Instagram_logo.svg.png" class="brand-img">
+            <input type="text" class="search-box" placeholder="search">
+            <div class="nav-items">
+                <img src="https://i.ibb.co/K2bwMQN/home.png" class="icon">
+                <img src="https://i.ibb.co/C5FB2K3/messenger.png" class="icon">
+                <img src="https://i.ibb.co/0nyCw2J/add.png" class="icon">
+                <img src="https://i.ibb.co/dM0fkTb/explore.png" class="icon">
+                <img src="https://i.ibb.co/MNcGHv6/like.png" class="icon">
+                <div class="icon user-profile"></div>
+            </div>
+        </div>
+    </nav>
+<!-- navbar ends here -->
+
+<!-- section starts here -->
+    <section class="main">
+        <div class="wrapper">
+            <!-- left column starts here -->
+            <div class="left-col">
+                <!-- status wrapper starts here -->
+                <div class="status-wrapper">
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/288eb698-edd4-4a65-93d1-7b2241da06f3/dekiksn-664f550d-186f-43f5-acbb-a0cf6e8a1e70.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI4OGViNjk4LWVkZDQtNGE2NS05M2QxLTdiMjI0MWRhMDZmM1wvZGVraWtzbi02NjRmNTUwZC0xODZmLTQzZjUtYWNiYi1hMGNmNmU4YTFlNzAuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.JXwSHxIPJA0UtkKjaVxaT8YoI8fHu0RUS_2y9nEjT20"></div>
+                        <p class="username">user_name_1</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/288eb698-edd4-4a65-93d1-7b2241da06f3/decar8f-5b5c4c2d-e83d-4a9a-b724-8f5711d23402.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI4OGViNjk4LWVkZDQtNGE2NS05M2QxLTdiMjI0MWRhMDZmM1wvZGVjYXI4Zi01YjVjNGMyZC1lODNkLTRhOWEtYjcyNC04ZjU3MTFkMjM0MDIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ZQuwGKmO6QdAg8dkQPvGsAOV46JiIjB-aOub30pMS4g"></div>
+                        <p class="username">user_name_2</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/288eb698-edd4-4a65-93d1-7b2241da06f3/degldov-a8fb5c8c-61ee-4a55-bd26-534a06bcb0b5.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI4OGViNjk4LWVkZDQtNGE2NS05M2QxLTdiMjI0MWRhMDZmM1wvZGVnbGRvdi1hOGZiNWM4Yy02MWVlLTRhNTUtYmQyNi01MzRhMDZiY2IwYjUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.4kZwzJCLMM4IfVZaFiHwiU8ymzYTGTwGcNf2VyjEXIE"></div>
+                        <p class="username">user_name_3</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/288eb698-edd4-4a65-93d1-7b2241da06f3/de8nrso-5cfef24f-6952-406f-920a-69d9f186a322.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI4OGViNjk4LWVkZDQtNGE2NS05M2QxLTdiMjI0MWRhMDZmM1wvZGU4bnJzby01Y2ZlZjI0Zi02OTUyLTQwNmYtOTIwYS02OWQ5ZjE4NmEzMjIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.YUFt0L5FjOkd-gDaQmseY_DxTTjiwP-gy1Z1TlCUvDE"></div>
+                        <p class="username">user_name_4</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/288eb698-edd4-4a65-93d1-7b2241da06f3/dec6eyi-d733e554-9b30-4975-bf3e-aaff1f87242d.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI4OGViNjk4LWVkZDQtNGE2NS05M2QxLTdiMjI0MWRhMDZmM1wvZGVjNmV5aS1kNzMzZTU1NC05YjMwLTQ5NzUtYmYzZS1hYWZmMWY4NzI0MmQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.0iyQRssxpyfgGHZWAh4NJ_WlRdohvUsPHMOdZ3fBYVM"></div>
+                        <p class="username">user_name_5</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/288eb698-edd4-4a65-93d1-7b2241da06f3/deaq1h1-414c70af-3920-43c3-979b-8eeb30c5b33f.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI4OGViNjk4LWVkZDQtNGE2NS05M2QxLTdiMjI0MWRhMDZmM1wvZGVhcTFoMS00MTRjNzBhZi0zOTIwLTQzYzMtOTc5Yi04ZWViMzBjNWIzM2YuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.JNP8Jp35DjW5JKjaiYP7z99NBYn7V_RjA3rEu1TgOV8"></div>
+                        <p class="username">user_name_6</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/288eb698-edd4-4a65-93d1-7b2241da06f3/dec4a1j-938e4bbf-6f19-41f3-9938-083fc5256217.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI4OGViNjk4LWVkZDQtNGE2NS05M2QxLTdiMjI0MWRhMDZmM1wvZGVjNGExai05MzhlNGJiZi02ZjE5LTQxZjMtOTkzOC0wODNmYzUyNTYyMTcuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.zsSMNEj5HBabl9lmvVvcqb0jBcIK6xTsmLwyXWa89OI"></div>
+                        <p class="username">user_name_7</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/288eb698-edd4-4a65-93d1-7b2241da06f3/ded3u8x-f1fd2a4f-c0f9-4fbe-bf27-cb2bb1594b67.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI4OGViNjk4LWVkZDQtNGE2NS05M2QxLTdiMjI0MWRhMDZmM1wvZGVkM3U4eC1mMWZkMmE0Zi1jMGY5LTRmYmUtYmYyNy1jYjJiYjE1OTRiNjcuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.FJA4x7w1WxBZmJeqUkNIcl4oIdDYgwiPjxdCXbU_4s0"></div>
+                        <p class="username">user_name_8</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/288eb698-edd4-4a65-93d1-7b2241da06f3/dewb3sj-710a25c6-ce59-41b2-8fbb-08b74ecb52ae.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI4OGViNjk4LWVkZDQtNGE2NS05M2QxLTdiMjI0MWRhMDZmM1wvZGV3YjNzai03MTBhMjVjNi1jZTU5LTQxYjItOGZiYi0wOGI3NGVjYjUyYWUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.jIVur76GOqmqSXHoUXpfeNIRK_JRmj3yaj3q6UASfyQ"></div>
+                        <p class="username">user_name_9</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/288eb698-edd4-4a65-93d1-7b2241da06f3/decf2fy-8d97b5d3-deed-43e3-af2f-4c0a470360f0.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI4OGViNjk4LWVkZDQtNGE2NS05M2QxLTdiMjI0MWRhMDZmM1wvZGVjZjJmeS04ZDk3YjVkMy1kZWVkLTQzZTMtYWYyZi00YzBhNDcwMzYwZjAuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.JX6rvapL2s7l0tZuE9gg0ZyNdsP830bt-VAosXb_Cjs"></div>
+                        <p class="username">user_name_10</p>
+                    </div>
+                </div>
+                <!-- status wrapper ends here -->
+
+                <!-- post starts here -->
+                <div class="post">
+                    <div class="info">
+                        <div class="user">
+                            <div class="profile-pic"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/288eb698-edd4-4a65-93d1-7b2241da06f3/de8nrso-5cfef24f-6952-406f-920a-69d9f186a322.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI4OGViNjk4LWVkZDQtNGE2NS05M2QxLTdiMjI0MWRhMDZmM1wvZGU4bnJzby01Y2ZlZjI0Zi02OTUyLTQwNmYtOTIwYS02OWQ5ZjE4NmEzMjIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.YUFt0L5FjOkd-gDaQmseY_DxTTjiwP-gy1Z1TlCUvDE"></div>
+                            <p class="username">user_name_4</p>
+                        </div>
+                        <img src="https://i.ibb.co/8sQpYdh/option.png" class="options">
+                    </div>
+                    <img src="https://i.pinimg.com/564x/d9/c2/9c/d9c29c0ef6f3a6685971b0daeeddb201.jpg" class="post-image">
+                    <div class="post-content">
+                        <div class="reaction-wrapper">
+                            <img src="https://i.ibb.co/MNcGHv6/like.png" class="icon">
+                            <img src="https://i.ibb.co/M9TXmYz/comment.png" class="icon">
+                            <img src="https://i.ibb.co/nfyRwMD/send.png" class="send icon">
+                            <img src="https://i.ibb.co/3mTRHbp/save.png" class="save icon">
+                        </div>
+                        <p class="likes">69 likes</p>
+                        <p class="description"><span>user_name_4</span>My pretty boy ♡</p>
+                        <p class="post-time">30 MINUTES AGO</p>
+                    </div>
+                    <div class="comment-wrapper">
+                        <img src="https://i.ibb.co/q7BD1zR/smile.png" class="icon">
+                        <input type="text" class="comment-box" placeholder="Add a comment">
+                        <button class="comment-btn">post</button>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="info">
+                        <div class="user">
+                            <div class="profile-pic"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/288eb698-edd4-4a65-93d1-7b2241da06f3/decf2fy-8d97b5d3-deed-43e3-af2f-4c0a470360f0.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI4OGViNjk4LWVkZDQtNGE2NS05M2QxLTdiMjI0MWRhMDZmM1wvZGVjZjJmeS04ZDk3YjVkMy1kZWVkLTQzZTMtYWYyZi00YzBhNDcwMzYwZjAuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.JX6rvapL2s7l0tZuE9gg0ZyNdsP830bt-VAosXb_Cjs"></div>
+                            <p class="username">user_name_10</p>
+                        </div>
+                        <img src="https://i.ibb.co/8sQpYdh/option.png" class="options">
+                    </div>
+                    <img src="https://i.pinimg.com/564x/9f/83/55/9f8355b619f61925ae9541c8689d458a.jpg" class="post-image">
+                    <div class="post-content">
+                        <div class="reaction-wrapper">
+                            <img src="https://i.ibb.co/MNcGHv6/like.png" class="icon">
+                            <img src="https://i.ibb.co/M9TXmYz/comment.png" class="icon">
+                            <img src="https://i.ibb.co/nfyRwMD/send.png" class="send icon">
+                            <img src="https://i.ibb.co/3mTRHbp/save.png" class="save icon">
+                        </div>
+                        <p class="likes">128 likes</p>
+                        <p class="description"><span>user_name_10</span>Check out my drawing!</p>
+                        <p class="post-time">1 HOUR AGO</p>
+                    </div>
+                    <div class="comment-wrapper">
+                        <img src="https://i.ibb.co/q7BD1zR/smile.png" class="icon">
+                        <input type="text" class="comment-box" placeholder="Add a comment">
+                        <button class="comment-btn">post</button>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="info">
+                        <div class="user">
+                            <div class="profile-pic"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/288eb698-edd4-4a65-93d1-7b2241da06f3/dec4a1j-938e4bbf-6f19-41f3-9938-083fc5256217.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI4OGViNjk4LWVkZDQtNGE2NS05M2QxLTdiMjI0MWRhMDZmM1wvZGVjNGExai05MzhlNGJiZi02ZjE5LTQxZjMtOTkzOC0wODNmYzUyNTYyMTcuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.zsSMNEj5HBabl9lmvVvcqb0jBcIK6xTsmLwyXWa89OI"></div>
+                            <p class="username">user_name_7</p>
+                        </div>
+                        <img src="https://i.ibb.co/8sQpYdh/option.png" class="options">
+                    </div>
+                    <img src="https://i.pinimg.com/564x/cc/1d/88/cc1d88972e63680ca0f92ad9f4e3427f.jpg" class="post-image">
+                    <div class="post-content">
+                        <div class="reaction-wrapper">
+                            <img src="https://i.ibb.co/MNcGHv6/like.png" class="icon">
+                            <img src="https://i.ibb.co/M9TXmYz/comment.png" class="icon">
+                            <img src="https://i.ibb.co/nfyRwMD/send.png" class="send icon">
+                            <img src="https://i.ibb.co/3mTRHbp/save.png" class="save icon">
+                        </div>
+                        <p class="likes">1,367 likes</p>
+                        <p class="description"><span>user_name_7</span>Brought lil' pablo to a vacay with me. Rate his fit :3</p>
+                        <p class="post-time">45 MINUTES AGO</p>
+                    </div>
+                    <div class="comment-wrapper">
+                        <img src="https://i.ibb.co/q7BD1zR/smile.png" class="icon">
+                        <input type="text" class="comment-box" placeholder="Add a comment">
+                        <button class="comment-btn">post</button>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="info">
+                        <div class="user">
+                            <div class="profile-pic"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/288eb698-edd4-4a65-93d1-7b2241da06f3/decar8f-5b5c4c2d-e83d-4a9a-b724-8f5711d23402.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI4OGViNjk4LWVkZDQtNGE2NS05M2QxLTdiMjI0MWRhMDZmM1wvZGVjYXI4Zi01YjVjNGMyZC1lODNkLTRhOWEtYjcyNC04ZjU3MTFkMjM0MDIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ZQuwGKmO6QdAg8dkQPvGsAOV46JiIjB-aOub30pMS4g"></div>
+                            <p class="username">user_name_2</p>
+                        </div>
+                        <img src="https://i.ibb.co/8sQpYdh/option.png" class="options">
+                    </div>
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/288eb698-edd4-4a65-93d1-7b2241da06f3/de80uj5-af00b1f8-0679-4278-8e7f-d564979823eb.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI4OGViNjk4LWVkZDQtNGE2NS05M2QxLTdiMjI0MWRhMDZmM1wvZGU4MHVqNS1hZjAwYjFmOC0wNjc5LTQyNzgtOGU3Zi1kNTY0OTc5ODIzZWIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.TMP2SQUjp_vW11E3PEucSnidsyG-qvvKeSCshuvrzxc" class="post-image">
+                    <div class="post-content">
+                        <div class="reaction-wrapper">
+                            <img src="https://i.ibb.co/MNcGHv6/like.png" class="icon">
+                            <img src="https://i.ibb.co/M9TXmYz/comment.png" class="icon">
+                            <img src="https://i.ibb.co/nfyRwMD/send.png" class="send icon">
+                            <img src="https://i.ibb.co/3mTRHbp/save.png" class="save icon">
+                        </div>
+                        <p class="likes">240 likes</p>
+                        <p class="description"><span>user_name_2</span>It's my bestie! ^_^</p>
+                        <p class="post-time">3 HOURS AGO</p>
+                    </div>
+                    <div class="comment-wrapper">
+                        <img src="https://i.ibb.co/q7BD1zR/smile.png" class="icon">
+                        <input type="text" class="comment-box" placeholder="Add a comment">
+                        <button class="comment-btn">post</button>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="info">
+                        <div class="user">
+                            <div class="profile-pic"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/288eb698-edd4-4a65-93d1-7b2241da06f3/dewb3sj-710a25c6-ce59-41b2-8fbb-08b74ecb52ae.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI4OGViNjk4LWVkZDQtNGE2NS05M2QxLTdiMjI0MWRhMDZmM1wvZGV3YjNzai03MTBhMjVjNi1jZTU5LTQxYjItOGZiYi0wOGI3NGVjYjUyYWUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.jIVur76GOqmqSXHoUXpfeNIRK_JRmj3yaj3q6UASfyQ"></div>
+                            <p class="username">user_name_9</p>
+                        </div>
+                        <img src="https://i.ibb.co/8sQpYdh/option.png" class="options">
+                    </div>
+                    <img src="https://i.pinimg.com/564x/0a/e9/b9/0ae9b9d6561f435ab858f2d69d0aa4cb.jpg" class="post-image">
+                    <div class="post-content">
+                        <div class="reaction-wrapper">
+                            <img src="https://i.ibb.co/MNcGHv6/like.png" class="icon">
+                            <img src="https://i.ibb.co/M9TXmYz/comment.png" class="icon">
+                            <img src="https://i.ibb.co/nfyRwMD/send.png" class="send icon">
+                            <img src="https://i.ibb.co/3mTRHbp/save.png" class="save icon">
+                        </div>
+                        <p class="likes">579 likes</p>
+                        <p class="description"><span>user_name_9</span>Selfie time ;)</p>
+                        <p class="post-time">5 HOURS AGO</p>
+                    </div>
+                    <div class="comment-wrapper">
+                        <img src="https://i.ibb.co/q7BD1zR/smile.png" class="icon">
+                        <input type="text" class="comment-box" placeholder="Add a comment">
+                        <button class="comment-btn">post</button>
+                    </div>
+                </div>
+                <!-- post ends here -->
+            </div>
+            <!-- left column ends here-->
+
+            <!-- right column starts here -->
+            <div class="right-col">
+                <div class="profile-card">
+                    <div class="profile-pic">
+                        <img src="https://i.ibb.co/y4Kh6DY/0cb99a13e75ef25ba9c680657c564c06-modified.png">
+                    </div>
+                    <div class="profile-name-user">
+                        <p class="username">chelsaurus_</p>
+                        <p class="sub-text">Chelsea Rose</p>
+                    </div>
+                    <button class="action-btn">Switch</button>
+                </div>
+                <div class="suggestion">
+                    <p class="suggestion-text">Suggestions for you</p>
+                    <p class="see-all">See all</p>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-pic">
+                        <img src="https://i.pinimg.com/564x/20/3b/45/203b45bc5aebd77df712d03948c8add1.jpg">
+                    </div>
+                    <div class="profile-name">
+                        <p class="username">user_name_11</p>
+                        <p class="sub-text">Followed by user + 2 more</p>
+                    </div>
+                    <button class="action-btn">Follow</button>
+                </div>
+
+                <div class="profile-card">
+                    <div class="profile-pic">
+                        <img src="https://i.pinimg.com/564x/aa/1e/db/aa1edb9347b238b2c34abfe56b7fd3b7.jpg">
+                    </div>
+                    <div class="profile-name">
+                        <p class="username">user_name_12</p>
+                        <p class="sub-text">Followed by user + 6 more</p>
+                    </div>
+                    <button class="action-btn">Follow</button>
+                </div>
+
+                <div class="profile-card">
+                    <div class="profile-pic">
+                        <img src="https://i.pinimg.com/564x/0d/98/fb/0d98fb9cc1b18eeb61a7de80418a7511.jpg">
+                    </div>
+                    <div class="profile-name">
+                        <p class="username">user_name_13</p>
+                        <p class="sub-text">Followed by user + 3 more</p>
+                    </div>
+                    <button class="action-btn">Follow</button>
+                </div>
+
+                <div class="profile-card">
+                    <div class="profile-pic">
+                        <img src="https://i.pinimg.com/564x/82/fa/67/82fa67d71ca30a3104c999d5e6c6111e.jpg">
+                    </div>
+                    <div class="profile-name">
+                        <p class="username">user_name_14</p>
+                        <p class="sub-text">New to Instagram</p>
+                    </div>
+                    <button class="action-btn">Follow</button>
+                </div>
+
+                <div class="profile-card">
+                    <div class="profile-pic">
+                        <img src="https://i.pinimg.com/564x/74/e4/71/74e471e510944128b34a057a9fbe2b8b.jpg">
+                    </div>
+                    <div class="profile-name">
+                        <p class="username">user_name_15</p>
+                        <p class="sub-text">Followed by user + 10 more</p>
+                    </div>
+                    <button class="action-btn">Follow</button>
+                </div>
+
+            </div>
+            <!-- right column ends here -->
+        </div>
+    </section>
+<!-- section ends here -->
+</body>
+</html>

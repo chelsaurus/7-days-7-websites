@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    margin: 0px 200px;
+    text-align:center;
+    display:block;
+    position: relative;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+}
+
+.navbar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.searchbar{
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    border-radius: 40px;
+    padding: 1% 1%;
+    background-color: rgb(255, 255, 255);
+}
+
+.searchlogo{
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    float: right;
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0px;
+    color: rgb(158, 105, 70);
+    font-size: 15px;
+    line-height: 10px;
+    width: 50%;
+}
+
+.navbar > ul{
+    display: flex;
+    justify-content:space-evenly;
+    position: relative;
+    left: 1%;
+}
+
+.navbar > ul > li{
+    list-style: none;
+    padding: 8px 0px;
+}
+
+.navbar > ul > li > a{
+    text-decoration: none;
+    padding: 30px;
+    color: rgb(158, 105, 70);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.login{
+    display: flex;
+    position: relative;
+    left: 1%;
+}
+
+.loginlogo{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    padding: 8px 10px;
+    padding-left: 0px;
+}
+
+.navbar > .login > a{
+    text-decoration: none;
+    color: rgb(158, 105, 70);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 8px 0px;
+}
+
+.cart{
+    position: relative;
+    left: 0%;
+    cursor: pointer;
+}
+
+.cartlogo{
+    width: 19px;
+    height: 19px;
+    display: flex;
+    padding: 8px 10px;
+}
+
+.container1{
+    display: flex;
+    margin: 20px 200px;
+}
+
+.image1{
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.row{
+    position: absolute;
+    top: 46%;
+    right: 28%;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.row > h3{
+    font-size: 100%;
+    padding: 10px 20px;
+}
+
+.container2{
+    display: block;
+    justify-content: center;
+    margin: 25px 200px;
+}
+
+.container2 > .row1{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.image2{
+    width: 32%;
+    height: 22%;
+}
+
+.image3{
+    width: 32%;
+    height: 22%;
+}
+
+.image4{
+    width: 32%;
+    height: 22%;
+}
+
+.container2 > .row2{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px;
+}
+
+.image5{
+    width: 32%;
+    height: 22%;
+}
+
+.image6{
+    width: 32%;
+    height: 22%;
+}
+
+.image7{
+    width: 32%;
+    height: 22%;
+}
+
+.newarrivals{
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+}
+
+.container2 > h1{
+    font-size: 50px;
+}
+
+.divider{
+    margin: 50px 200px;
+}
+
+hr.solid {
+    border-top: 1px solid rgba(0, 0, 0, 0.705);
+}
+
+.container3{
+    display: block;
+    margin: 60px 200px;
+}
+
+.newsletter{
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter > p{
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+.newsletter2{
+    display: flex;
+    justify-content: center;
+}
+
+.newsletterbar{
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 1% 1%;
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+}
+
+.newsletter-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0px;
+    color: white;
+    font-size: 15px;
+    line-height: 10px;
+    width: 50%;
+}
+
+.newsletter-btn{
+    background-color: black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.newsletter-btn > p{
+    font-size: 13px;
+    padding: 11px;
+    font-weight: 500;
+    color: white;
+}
+
+.footer {
+    height: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    color: rgb(158, 105, 70);
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@media only screen and (min-width: 768px){
+    .row{
+        position: absolute;
+        top: 57%;
+        right: 28%;
+        cursor: pointer;
+    }
+
+}
+
+

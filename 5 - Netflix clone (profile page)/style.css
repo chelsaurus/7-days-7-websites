@@ -1,0 +1,259 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+body {
+    background-color: #141414;
+}
+
+.navbar{
+    display: flex;
+    padding: 0px 20px;
+    height: 20%;
+}
+
+.netflix-logo {
+    width: 12%;
+    height: auto;
+    cursor: pointer;
+}
+
+.profiles-container{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: normal;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.profiles-container h1{
+    color: white;
+    font-weight: 300;
+    margin: 20px 0px;
+    font-size: 30px;
+    animation-duration: 450ms;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: zoomout;
+}
+
+.profile-list {
+    max-width: 80%;
+    text-align: center;
+    justify-content: space-between;
+    display: block;
+}
+
+.profiles-container ul {
+    display: flex;
+    margin: 14px 0px;
+}
+
+.profiles-container ul li {
+    list-style: none;
+    margin: 6px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.profiles-container ul li .profile {
+    width: 10vw;
+    height: 10vh;
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 84px;
+    min-height: 84px;
+}
+
+.profiles-container ul li a{
+    color: white;
+}
+
+.profile-icon {
+    min-width: 84px;
+    min-height: 84px;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+    position: relative;
+    animation-duration: 450ms;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: zoomout;
+}
+
+.profiles-container ul li :nth-child(5){
+    margin-right: 0px;
+    margin-left: 100px;
+}
+
+.profile-link:hover .profile-icon {
+    width: 85px;
+    height: 85px;
+    box-sizing: border-box;
+    border: 1px solid white;
+}
+
+.profile-btn a{
+    color: #808080;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 13px;
+    border: 1px solid #808080;
+    padding: 6px 18px;
+    margin: 24px 0px;
+    display: block;
+    animation-duration: 450ms;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: zoomout;
+}
+
+.profile-btn a:hover{
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 13px;
+    border: 1px solid #ffffff;
+    padding: 6px 18px;
+    margin: 24px 0px;
+    display: block;
+}
+
+.profile-name {
+    font-size: 12px;
+    margin: 7px 0px;
+    color: #808080;
+    display: block;
+    animation-duration: 450ms;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: zoomout;
+}
+
+.profile-link:hover .profile-name {
+    color: white;
+}
+
+/* Animation section */
+
+@keyframes zoomout {
+    0% {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* responsive section */
+
+@media only screen and (min-width: 992px) {
+    .profile-list {
+        max-width: 80%;
+    }
+    
+    .profiles-container h1{
+        font-size: 35px;
+    }
+    
+    .profile-icon{
+        width: 95px;
+        height: 95px;
+    }
+
+    .profile-link:hover .profile-icon{
+        width: 95px;
+        height: 95px;
+        border: 2px solid #ffffff;
+    }
+
+    .profile-name{
+        font-size: 12px;
+    }
+
+    .profile-link:hover .profile-name{
+        font-size: 12px;
+    }
+
+    .profile-btn a{
+        font-size: 13px;
+    }
+
+    .profile-btn a:hover{
+        font-size: 13px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .profile-list {
+        max-width: 80%;
+    }
+    
+    .profiles-container h1{
+        font-size: 47px;
+    }
+    
+    .profile-icon{
+        width: 134px;
+        height: 134px;
+    }
+
+    .profile-link:hover .profile-icon{
+        width: 134px;
+        height: 134px;
+        border: 3px solid #ffffff;
+    }
+
+    .profile-name{
+        font-size: 17px;
+    }
+
+    .profile-link:hover .profile-name{
+        font-size: 17px;
+    }
+
+    .profile-btn a{
+        font-size: 13px;
+    }
+
+    .profile-btn a:hover{
+        font-size: 13px;
+    }
+}
+
+
+
+
